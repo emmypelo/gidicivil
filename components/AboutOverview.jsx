@@ -45,19 +45,19 @@ const AboutOverview = () => {
       <div className="numbers  w-full bg-transparent h-[200px] max-h-[200px] border border-red-300  gap-1 justify-evenly my-2 p-2 relative">
         <div className="containerA grid grid-cols-2 md:grid-cols-4 gap-2 p-2 h-full ">
           <div className="numbers-card">
+            <h2 className="text-2xl font-extrabold">10+</h2>
+            <p>Years of Experience</p>
+          </div>
+          <div className="numbers-card">
+            <h2 className="text-xl font-bold">15</h2>
+            <p>Projects Completed </p>
+          </div>
+          <div className="numbers-card">
             <h2 className="text-2xl font-extrabold">8</h2>
             <p>Awards received</p>
           </div>
           <div className="numbers-card">
-            <h2 className="text-xl font-bold">20</h2>
-            <p>Workforce </p>
-          </div>
-          <div className="numbers-card">
-            <h2 className="text-2xl font-extrabold">8</h2>
-            <p>Awards received</p>
-          </div>
-          <div className="numbers-card">
-            <h2 className="text-xl font-bold">20</h2>
+            <h2 className="text-xl font-bold">25+</h2>
             <p>Workforce </p>
           </div>
         </div>
@@ -100,7 +100,6 @@ const AboutOverview = () => {
           </div>
         </div>
       </div>
-      <Image src={Integrity} />
     </div>
   );
 };
