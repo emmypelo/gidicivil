@@ -10,7 +10,6 @@ import { GrBlog } from "react-icons/gr";
 import Logo from "../public/img/logo.png";
 import Image from "next/image";
 
-
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const menuRef = useRef(null);
@@ -41,23 +40,26 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full fixed border-b-2 border-b-[#ffad00] top-0 z-20 mb-12">
-      <header className="flex items-center justify-between bg-[#ffffff] px-3 py-3 w-full h-12">
-        <div className="flex w-[10%]">
+    <div className="w-full fixed border-b-2 border-b-[#ffad00] top-0 z-20">
+      <header className="flex items-center justify-between bg-[#ffffff] px-3 py-3 w-full  max-h-12">
+        <div className="flex w-[10%] lg:hidden">
           <TfiMenu
             onClick={toggleMenu}
             className="flex ml-3 cursor-pointer lg:hidden fill-yellow-400 font-semibold text-xl"
           />
         </div>
-        <div className="lg:w-[10%] w-1/5  relative bg-white ">
-          <Image src={Logo} className="w-full"></Image>
+        <div className="lg:w-[10%]  w-1/5  relative bg-white ">
+          <Image
+            src={Logo}
+            className="w-full lg:float-start   relative max-h-12"
+          ></Image>
         </div>
         <nav className="hidden lg:flex items-center justify-around md:gap-1 rounded-full bg-[#010101]  w-[80%]">
           {navLists.map((nav) => (
             <Link
               key={nav.title}
               href={nav.link}
-              className="transition-all rounded-full md:px-3 py-1 text-lg font-semibold  duration-500 ease-in-out hover:bg-yellow-500 hover:text-white"
+              className="transition-all rounded-full md:px-3 py-1 text-lg font-semibold  duration-500 ease-in-out hover:bg-gidiYellow hover:text-white"
             >
               {nav.title}
             </Link>
@@ -81,11 +83,11 @@ const Navbar = () => {
           </div>
         </div>
         {/* Nav list */}
-        <div className="flex flex-col gap-3 w-full items-left cursor-pointer  relative border-b-[#ffad00]  border-b-2 border-r-2 border-r-[#ffad00] z-40 p-2">
+        <div className="flex flex-col gap-3 w-full items-left cursor-pointer  relative border-b-gidiYellow  border-b-2 border-r-2 border-r-gidiYellow z-40 p-2">
           {navLists.map((nav) => (
             <div
               key={nav.title}
-              className="flex w-full transition-all rounded-xl px-3 py-1 text-sm font-semibold gap-4 duration-500 ease-in-out hover:bg-yellow-500 hover:text-white"
+              className="flex w-full transition-all rounded-xl px-3 py-1 text-sm font-semibold gap-4 duration-500 ease-in-out hover:bg-gidiYellow hover:text-white"
               onClick={toggleMenu}
             >
               <nav.icon className="self-center" />

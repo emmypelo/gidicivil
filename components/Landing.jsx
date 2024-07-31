@@ -15,7 +15,7 @@ const Landing = () => {
       />
       <div className="overlay absolute top-0 left-0 flex flex-col md:flex-row justify-between gap-2  w-full h-[400px] md:h-[450px] lg:h-[700px] px-6 bg-[rgba(0,0,0,0.5)]">
         {/*  */}
-        <div className="text-content h-full  flex flex-col gap-2 justify-center p-2 w-full md:w-[50%] z-[10]">
+        <div className="text-content h-full  flex flex-col gap-2 justify-center p-2 pt-12 w-full md:w-[50%] z-[10]">
           <h1 className="capitalize text-xl font-bold">
             your professional construction solution
           </h1>
@@ -36,7 +36,7 @@ const Landing = () => {
             </Link>
           </div>
         </div>
-        <div className="img-content flex h-[100%] items-end w-full md:w-[50%] -mt-32 ml-10 md:mt-0 z-[9] relative">
+        <div className="img-content  h-[100%] items-end w-full md:w-[50%]   md:mt-0 z-[9] absolute top-26 md:left-[40vw] hidden md:flex">
           <Image
             src={Eng}
             alt="Dojo Helpdesk logo"

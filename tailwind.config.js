@@ -7,10 +7,36 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        gidiYellow: "#f8c806",
+        deepYellow: "#f8c806",
+        darkText: "#737373",
+        borderColor: "#333333",
+      },
+      screens: {
+        xs: "320px",
+        sm: "375px",
+        sml: "425px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+        "2xl": "1400px",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        bgOne: "url('/assets/bgOne.webp')",
+        bgTwo: "url('/assets/bgTwo.webp')",
+        bgThree: "url('/assets/bgThree.webp')",
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
+      boxShadow: {
+        customShadowOne: "0px 0px 15px 1px rgba(0,0,0,0.88);",
+      },
+      fontFamily: {
+        bodyFont: ["Poppins"],
       },
     },
   },
