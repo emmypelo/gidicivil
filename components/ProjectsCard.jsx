@@ -11,6 +11,7 @@ const ProjectsCard = () => {
       name={item.name}
       url={item.imageurl}
       description={item.description}
+      key={item.id}
     />
   ));
 

@@ -51,6 +51,7 @@ const Navbar = () => {
         <div className="lg:w-[10%]  w-1/5  relative bg-white ">
           <Image
             src={Logo}
+            alt=""
             className="w-full lg:float-start   relative max-h-12"
           ></Image>
         </div>
