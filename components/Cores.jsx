@@ -91,7 +91,7 @@ const Cores = () => {
           </div>
         </div>
         <div className="image  lg:max-w-[300px] w-full flex justify-center">
-          <Image src={Corevalues} width={300} height={300} />
+          <Image src={Corevalues } alt="" width={300} height={300} />
         </div>
       </div>
     </div>

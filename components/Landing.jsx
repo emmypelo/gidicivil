@@ -22,7 +22,7 @@ const Landing = () => {
           achieving your aspirations is within reach when you work with us.
           Maintaining the utmost level of professionalism, honesty, and fairness
           in our interactions with clients, employees, and professional
-          associates allows us to consistently meet our clients' needs through
+          associates allows us to consistently meet our clients needs through
           the provision of high-quality construction services. We strive to
           create value for our clients through innovation, foresight, and
           integrity.
