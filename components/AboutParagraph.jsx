@@ -38,7 +38,7 @@ const AboutParagraph = () => {
   return (
     <div className="text-center">
       {" "}
-      <p className="text-left">
+      <p className="text-justify">
         {first20Words}
         <span
           ref={contentRef}
