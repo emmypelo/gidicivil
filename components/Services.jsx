@@ -54,7 +54,7 @@ const Services = () => {
             <Image
               className="rounded-t-lg"
               src={Sketch}
-              alt=""
+              alt="Gidi services"
               width={"auto"}
               height={"auto"}
             />

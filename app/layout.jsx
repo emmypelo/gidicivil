@@ -24,17 +24,43 @@ export const metadata = {
     "investment",
   ],
   description:
-    "At GIDI CIVIL CONSTRUCTION, achieving your aspirations is within reach when you work with us.Maintaining the utmost level of professionalism, honesty, and fairness in our interactions with clients, employees, and professional associates allows us to consistently meet our clients needs through the provision of high-quality construction services. We strive to create value for our clients through innovation foresight, and integrity.",
+    "At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity.",
   title: {
-    default: "Gidi civil construction",
-    template: "%s | Gidi Civil construction",
+    default: "Gidi Civil Construction",
+    template: "%s | Gidi Civil Construction",
   },
   openGraph: {
+    title: "Gidi Civil Construction",
     description:
-      "At GIDI CIVIL CONSTRUCTION, achieving your aspirations is within reach when you work with us.Maintaining the utmost level of professionalism, honesty, and fairness in our interactions with clients, employees, and professional associates allows us to consistently meet our clients needs through the provision of high-quality construction services. We strive to create value for our clients through innovation foresight, and integrity.",
+      "At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity.",
+    type: "website",
+    url: "https://gidicivilconstruction.com",
+    siteName: "Gidi Civil Construction Limited",
+    images: [
+      {
+        url: "https://gidicivilconstruction.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gidi Civil Construction",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@GidiConstruction",
+    creator: "@ToyosiOsaseyi",
+    title: "Gidi Civil Construction",
+    description:
+      "At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity.",
+    images: [
+      {
+        url: "https://gidicivilconstruction.com/twitter-image.jpg",
+        alt: "Gidi Civil Construction",
+      },
+    ],
   },
   url: "https://gidicivilconstruction.com",
-  siteName: "Gidi Civil construction limited",
+  siteName: "Gidi Civil Construction Limited",
   type: "website",
   images: [],
 };
@@ -44,6 +70,47 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <meta property="og:title" content="Gidi Civil Construction" />
+        <meta
+          property="og:description"
+          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gidicivilconstruction.com" />
+        <meta
+          property="og:site_name"
+          content="Gidi Civil Construction Limited"
+        />
+        <meta
+          property="og:image"
+          content="https://gidicivilconstruction.com/og-image.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Gidi Civil Construction" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@GidiConstruction" />
+        <meta name="twitter:creator" content="@ToyosiOsaseyi" />
+        <meta name="twitter:title" content="Gidi Civil Construction" />
+        <meta
+          name="twitter:description"
+          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
+        />
+        <meta
+          name="twitter:image"
+          content="https://gidicivilconstruction.com/twitter-image.jpg"
+        />
+        <meta property="linkedin:card" content="summary_large_image" />
+        <meta property="linkedin:site" content="@GidiConstruction" />
+        <meta property="linkedin:title" content="Gidi Civil Construction" />
+        <meta
+          property="linkedin:description"
+          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
+        />
+        <meta
+          property="linkedin:image"
+          content="https://gidicivilconstruction.com/linkedin-image.jpg"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
