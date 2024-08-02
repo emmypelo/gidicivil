@@ -45,6 +45,9 @@ const Services = () => {
 
   return (
     <div className="w-[100vw] p-3  mx-auto">
+
+
+      
       <div className="rounded-xl border-2  p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {services.map((service) => (
           <div
