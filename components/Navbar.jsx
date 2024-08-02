@@ -52,6 +52,8 @@ const Navbar = () => {
           <Image
             src={Logo}
             alt=""
+            width={"auto"}
+            height={"auto"}
             className="w-full lg:float-start   relative max-h-12"
           ></Image>
         </div>

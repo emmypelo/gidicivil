@@ -5,11 +5,11 @@ const Projects = ({ image, name }) => {
     <div className="card h-[400px] flex flex-col justify-around">
       <div className=" h-[300px]  relative">
         <Image
-          className="w-[100%] object-contain h-full"
+          className="w-[100%] h-full contain-layout object-cover  "
           src={image}
           alt={name}
-          layout="fill"
-          objectFit="cover"
+          width={'auto'}
+          height={'auto'}
         />
       </div>
 

@@ -65,9 +65,7 @@ const Cores = () => {
                   className="header h-8 w-full cursor-pointer flex items-center justify-between   "
                   onClick={() => handleToggle(core.id)}
                 >
-                  <h1 className=" font-bold text-black ">
-                    {core.title}
-                  </h1>
+                  <h1 className=" font-bold text-black ">{core.title}</h1>
                   <span className="text-black">
                     {openId === core.id ? (
                       <FaMinus className="fill-black" />
@@ -91,7 +89,13 @@ const Cores = () => {
           </div>
         </div>
         <div className="image  lg:max-w-[300px] w-full flex justify-center">
-          <Image src={Corevalues } alt="" width={300} height={300} />
+          <Image
+            src={Corevalues}
+            alt="gidi core values"
+            width={"auto"}
+            height={"auto"}
+            className="w-[300px] h-[300px]"
+          />
         </div>
       </div>
     </div>

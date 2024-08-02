@@ -45,16 +45,19 @@ const Services = () => {
 
   return (
     <div className="w-[100vw] p-3  mx-auto">
-
-
-      
       <div className="rounded-xl border-2  p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {services.map((service) => (
           <div
             key={service.id}
             className="w-full bg-white border border-gray-200 rounded-lg shadow  "
           >
-            <Image className="rounded-t-lg" src={Sketch} alt="" />
+            <Image
+              className="rounded-t-lg"
+              src={Sketch}
+              alt=""
+              width={"auto"}
+              height={"auto"}
+            />
 
             <div className="p-3">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
