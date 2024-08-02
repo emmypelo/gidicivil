@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/Navbar";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +25,7 @@ export const metadata = {
   ],
   description:
     "At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity.",
-  title: {
-    default: "Gidi Civil Construction",
-    template: "%s | Gidi Civil Construction",
-  },
+  title: "Gidi Civil Construction",
   openGraph: {
     title: "Gidi Civil Construction",
     description:
@@ -59,10 +56,6 @@ export const metadata = {
       },
     ],
   },
-  url: "https://gidicivilconstruction.com",
-  siteName: "Gidi Civil Construction Limited",
-  type: "website",
-  images: [],
 };
 
 export default function RootLayout({ children }) {
@@ -73,7 +66,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Gidi Civil Construction" />
         <meta
           property="og:description"
-          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
+          content="At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gidicivilconstruction.com" />
@@ -94,22 +87,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Gidi Civil Construction" />
         <meta
           name="twitter:description"
-          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
+          content="At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity."
         />
         <meta
           name="twitter:image"
           content="https://gidicivilconstruction.com/twitter-image.jpg"
-        />
-        <meta property="linkedin:card" content="summary_large_image" />
-        <meta property="linkedin:site" content="@GidiConstruction" />
-        <meta property="linkedin:title" content="Gidi Civil Construction" />
-        <meta
-          property="linkedin:description"
-          content="At GIDI CIVIL CONSTRUCTION, we help you achieve aspirations with professionalism, honesty, and fairness. We meet client needs with quality construction services, creating value through innovation, and integrity."
-        />
-        <meta
-          property="linkedin:image"
-          content="https://gidicivilconstruction.com/linkedin-image.jpg"
         />
         <script
           dangerouslySetInnerHTML={{
