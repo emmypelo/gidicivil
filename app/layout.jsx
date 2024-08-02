@@ -63,36 +63,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
-        <meta property="og:title" content="Gidi Civil Construction" />
-        <meta
-          property="og:description"
-          content="At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gidicivilconstruction.com" />
-        <meta
-          property="og:site_name"
-          content="Gidi Civil Construction Limited"
-        />
-        <meta
-          property="og:image"
-          content="https://gidicivilconstruction.com/og-image.jpg"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Gidi Civil Construction" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@GidiConstruction" />
-        <meta name="twitter:creator" content="@ToyosiOsaseyi" />
-        <meta name="twitter:title" content="Gidi Civil Construction" />
-        <meta
-          name="twitter:description"
-          content="At GIDI CIVIL CONSTRUCTION, we help you achieve your aspirations with professionalism, honesty, and fairness. We meet client needs with high-quality construction services, creating value through innovation, foresight, and integrity."
-        />
-        <meta
-          name="twitter:image"
-          content="https://gidicivilconstruction.com/twitter-image.jpg"
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -105,6 +75,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+
       <body className={inter.className}>
         <noscript>
           <iframe
