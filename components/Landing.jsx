@@ -1,7 +1,3 @@
-// import Image from "next/image";
-// import Hero from "../public/img/rebar-site.jpg";
-// import Eng from "../public/img/engs.png";
-// import Link from "next/link";
 
 const Landing = () => {
   return (

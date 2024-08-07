@@ -1,4 +1,5 @@
 import AboutOverview from "@/components/AboutOverview";
+import ContactForm from "@/components/ContactForm";
 import Landing from "@/components/Landing";
 import ProjectsCard from "@/components/ProjectsCard";
 import Services from "@/components/Services";
@@ -11,6 +12,7 @@ const Home = () => {
       <AboutOverview />
       <Services />
       <ProjectsCard />
+      <ContactForm/>
     </div>
   );
 };

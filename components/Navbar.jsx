@@ -2,7 +2,6 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 
-import { CiMenuBurger } from "react-icons/ci";
 import { TfiMenu } from "react-icons/tfi";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { IoCreateOutline } from "react-icons/io5";
@@ -32,16 +31,17 @@ const Navbar = () => {
   }, []);
 
   const navLists = [
-    { title: "Home", icon: GrBlog, link: "/list-posts" },
-    { title: "About Us", icon: IoCreateOutline, link: "/create-post" },
-    { title: "Our Projects", icon: AiOutlineDashboard, link: "/dashboard" },
-    { title: "Our Teams", icon: AiOutlineDashboard, link: "/earnings" },
-    { title: "Contact Us", icon: AiOutlineDashboard, link: "/followers" },
+    { title: "Home", icon: GrBlog, link: "/" },
+    { title: "About", icon: IoCreateOutline, link: "/about" },
+    { title: "Projects", icon: AiOutlineDashboard, link: "/services" },
+    { title: "Teams", icon: AiOutlineDashboard, link: "/projects" },
+    { title: "Staff", icon: AiOutlineDashboard, link: "/staff" },
+    { title: "Contact", icon: AiOutlineDashboard, link: "/contact" },
   ];
 
   return (
-    <div className="w-full fixed border-b-2 border-b-[#ffad00] top-0 z-20">
-      <header className="flex items-center justify-between bg-[#ffffff] px-3 py-3 w-full  max-h-12">
+    <div className="w-[100vw] fixed border-b-2 border-b-[#ffad00] top-0 z-20">
+      <header className="flex items-center justify-between bg-[#ffffff] mx-auto py-2 px-2 w-full  max-h-12">
         <div className="flex w-[10%] lg:hidden">
           <TfiMenu
             onClick={toggleMenu}
