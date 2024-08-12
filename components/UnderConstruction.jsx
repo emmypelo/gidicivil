@@ -4,7 +4,7 @@ import Construction from "../public/img/under_construction.jpg";
 const UnderConstruction = () => {
   return (
     <div className="w-[100vw] h-[100vh] bg-slate-800 flex">
-      <Image src={Construction} className="m-auto " />
+      <Image src={Construction} alt="under construction" className="m-auto " />
     </div>
   );
 };
