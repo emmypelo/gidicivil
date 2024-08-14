@@ -11,7 +11,7 @@ export const responsive = {
   },
   tablet: {
     breakpoint: { max: 800, min: 464 },
-    items: 1,
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -19,9 +19,9 @@ export const responsive = {
   },
 };
 
-import project1 from "/public/img/project1.png";
-import project2 from "/public/img/project2.png";
-import project3 from "/public/img/project3.png";
+import project1 from "/public/images/palms.png";
+import project2 from "/public/images/civic1.png";
+import project3 from "/public/images/civic2.png";
 import project4 from "/public/img/project4.png";
 import project5 from "/public/img/project5.png";
 import project6 from "/public/img/project6.png";
@@ -32,41 +32,49 @@ export const projectData = [
   {
     id: 1,
     image: project1,
-    name: "Lagos2",
+    name: "The Palms Residence",
+    location: "Ajah, Lagos State",
   },
   {
     id: 2,
     image: project2,
-    name: "Abuja",
+    name: "Civic Residence",
+    location: "General Paint, Lagos State",
   },
   {
     id: 3,
     image: project3,
-    name: "Ekiti",
+    name: "Civic Residence",
+    location: "General Paint, Lagos State",
   },
   {
     id: 4,
     image: project4,
     name: "London",
+    location: "Ajah, Lagos State",
   },
   {
     id: 5,
     image: project5,
     name: "Kenya",
+    location: "Ajah, Lagos State",
   },
   {
     id: 6,
     image: project6,
     name: "Dubai",
+    location: "Ajah, Lagos State",
   },
   {
     id: 7,
     image: project7,
     name: "Dakota",
+    location: "Ajah, Lagos State",
   },
   {
     id: 8,
     image: project8,
     name: "Honolulu",
+    location: "Ajah, Lagos State",
   },
 ];

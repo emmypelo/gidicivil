@@ -1,22 +1,22 @@
-"use client";
-import { useState, useRef, useEffect } from "react";
+// "use client";
+// import { useState, useRef, useEffect } from "react";
 
 const AboutParagraph = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [maxHeight, setMaxHeight] = useState("0px");
-  const contentRef = useRef(null);
+  //   const [isExpanded, setIsExpanded] = useState(false);
+  //   const [maxHeight, setMaxHeight] = useState("0px");
+  //   const contentRef = useRef(null);
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+  //   const toggleExpand = () => {
+  //     setIsExpanded(!isExpanded);
+  //   };
 
-  useEffect(() => {
-    if (isExpanded) {
-      setMaxHeight(`${contentRef.current.scrollHeight}px`);
-    } else {
-      setMaxHeight("0px");
-    }
-  }, [isExpanded]);
+  //   useEffect(() => {
+  //     if (isExpanded) {
+  //       setMaxHeight(`${contentRef.current.scrollHeight}px`);
+  //     } else {
+  //       setMaxHeight("0px");
+  //     }
+  //   }, [isExpanded]);
 
   const text = `Gidi Civil Construction Limited was incorporated as a limited
   liability February 2021 offering various construction services from
@@ -32,15 +32,15 @@ const AboutParagraph = () => {
   exceeding their expectations and gaining their trust through
   exceptional performance by every member of the construction team.`;
 
-  const first20Words = text.split(" ").slice(0, 66).join(" ");
+  const first66Words = text.split(" ").slice(0, 66).join(" ");
   const remainingWords = text.split(" ").slice(66).join(" ");
 
   return (
     <div className="text-center">
       {" "}
-      <p className="text-justify">
-        {first20Words}
-        <span
+      <p className="text-justify text-black">
+        {first66Words}
+        {/* <span
           ref={contentRef}
           style={{
             maxHeight: maxHeight,
@@ -51,14 +51,9 @@ const AboutParagraph = () => {
           
         >
           {` ${remainingWords}`}
-        </span>
+        </span> */}
       </p>
-      <button
-        onClick={toggleExpand}
-        className="text-black  text-xl text-center font-bold mt-2 mx-auto w-[8rem]  border-2 border-white bg-gidiYellow p-1 hover:bg-white hover:border-gidiYellow hover:-translate-y-2 duration-500 ease-in-out"
-      >
-        {isExpanded ? "Show Less" : "Show More"}
-      </button>
+     
     </div>
   );
 };

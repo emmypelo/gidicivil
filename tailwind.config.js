@@ -32,6 +32,11 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      gridTemplateColumns: {
+        header: "15% 67% 15%",
+        "header-small": "15% 30% 20%",
+      },
+
       boxShadow: {
         customShadowOne: "0px 0px 15px 1px rgba(0,0,0,0.88);",
       },

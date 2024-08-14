@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
       </body>
     </html>

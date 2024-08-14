@@ -32,68 +32,81 @@ const Navbar = () => {
 
   const navLists = [
     { title: "Home", icon: GrBlog, link: "/" },
-    { title: "About", icon: IoCreateOutline, link: "/about" },
-    { title: "Projects", icon: AiOutlineDashboard, link: "/services" },
-    { title: "Teams", icon: AiOutlineDashboard, link: "/projects" },
-    { title: "Staff", icon: AiOutlineDashboard, link: "/staff" },
-    { title: "Contact", icon: AiOutlineDashboard, link: "/contact" },
+    { title: "About Us", icon: IoCreateOutline, link: "/about" },
+    { title: "Our Services", icon: AiOutlineDashboard, link: "/services" },
+    { title: "Our Projects", icon: AiOutlineDashboard, link: "/projects" },
+    { title: "Our Team", icon: AiOutlineDashboard, link: "/teams" },
   ];
 
   return (
     <div className="w-[100vw] fixed border-b-2 border-b-[#ffad00] top-0 z-20">
-      <header className="flex items-center justify-between bg-[#ffffff] mx-auto py-2 px-2 w-full  max-h-12">
-        <div className="flex w-[10%] lg:hidden">
+      <header className=" grid md:grid-cols-header grid-cols-header-small  gap-1 items-center justify-between bg-[#ffffff] mx-auto py-2 px-1   h-16">
+        {/* menu button */}
+
+        <div className="flex w-full md:hidden">
           <TfiMenu
             onClick={toggleMenu}
-            className="flex ml-3 cursor-pointer lg:hidden fill-yellow-400 font-semibold text-xl"
+            className="flex ml-3 cursor-pointer  md:hidden fill-yellow-400 font-semibold text-xl"
           />
         </div>
-        <div className="lg:w-[10%]  w-1/5  relative bg-white ">
+        {/* logo */}
+        <div className=" relative ">
           <Image
             src={Logo}
             alt="Gidi civil logo"
             width={"auto"}
             height={"auto"}
-            className="w-full lg:float-start   relative max-h-12"
+            className="lg:float-start   relative "
           ></Image>
         </div>
-        <nav className="hidden lg:flex items-center justify-around md:gap-1 rounded-full bg-[#010101]  w-[80%]">
+        {/* navlinks */}
+        <nav className="hidden md:flex items-center justify-around  rounded-full text-black  mx-auto w-full ">
           {navLists.map((nav) => (
             <Link
               key={nav.title}
               href={nav.link}
-              className="transition-all rounded-full md:px-3 py-1 text-lg font-semibold  duration-500 ease-in-out hover:bg-gidiYellow hover:text-white"
+              className="transition-all md:px-2 py-1 font-[500] border-b-4 border-transparent duration-500 ease-in-out hover:border-gidiYellow"
             >
               {nav.title}
             </Link>
           ))}
         </nav>
+        {/* contact button */}
+        <div className="flex w-full justify-stretch  pr-1">
+          <button className="text-black bg-[#FAB919] h-[2.5rem]  w-full rounded-md hover:bg-black hover:text-white hover:animate-pulse duration-300 ease-in-out">
+            Contact Us
+          </button>
+        </div>
       </header>
       {/* mobile navbar */}
       <div
         ref={menuRef}
-        className={`w-1/2 bg-[#010101] absolute top-0 transition-transform duration-300 lg:hidden ${
+        className={`w-1/2 absolute top-0 transition-transform duration-300 md:hidden ${
           menu ? "transform translate-x-0" : "transform -translate-x-full "
         }`}
       >
         {/* menu logo container */}
-        <div className="relative menu-logo flex w-full justify-between px-2 h-[49.5px] items-center border-b-[#ffad00]  border-b-2 z-[21] ">
-          <div className="cursor-pointer">
+        <div className="relative menu-logo flex w-[65%] justify-between px-2 h-[64px] items-center   z-[21] bg-transparent ">
+          <div className="cursor-pointer md:hidden">
             <TfiMenu
               onClick={toggleMenu}
-              className="ml-3 fill-yellow-400 font-semibold text-xl"
+              className="ml-2  fill-yellow-400 font-semibold text-xl"
             />
           </div>
         </div>
         {/* Nav list */}
-        <div className="flex flex-col gap-3 w-full items-left cursor-pointer  relative border-b-gidiYellow  border-b-2 border-r-2 border-r-gidiYellow z-40 p-2">
+        <div className="flex flex-col gap-3 w-[65%] items-left cursor-pointer  relative   z-[21] p-2 bg-white border-t-2 border-[#ffad00] border-r-2  border-b-2   h-62">
           {navLists.map((nav) => (
             <div
               key={nav.title}
-              className="flex w-full transition-all rounded-xl px-3 py-1 text-sm font-semibold gap-4 duration-500 ease-in-out hover:bg-gidiYellow hover:text-white"
+              className="flex w-full transition-all rounded-sm text-black px-2 py-1 text-sm font-semibold gap-4 duration-500 ease-in-out hover:bg-[#FAB919]"
               onClick={toggleMenu}
             >
-              <nav.icon className="self-center" />
+              {/* <nav.icon
+                className="self-center text-black"
+                stroke="black"
+                fill="black"
+              /> */}
               <Link href={nav.link} className="self-center">
                 {nav.title}
               </Link>
