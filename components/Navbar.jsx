@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* contact button */}
         <div className="flex w-full justify-stretch  pr-1">
           <button className="text-black bg-[#FAB919] h-[2.5rem]  w-full rounded-md hover:bg-black hover:text-white hover:animate-pulse duration-300 ease-in-out">
-            Contact Us
+            Contact
           </button>
         </div>
       </header>
